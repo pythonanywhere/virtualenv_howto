@@ -1,7 +1,7 @@
 Guide to setting up a virtualenv for PythonAnywhere Web apps
 ============================================================
 
-*Yo, we heard you like virtualenvs*...
+*Yo dawg, we heard you like virtualenvs*...
 
 This site is being served on PythonAnywhere from a virtualenv running Django 1.4
 
@@ -60,8 +60,6 @@ Now edit your wsgi file -- you'll need code like this
 
     import os
     import sys
-    #
-    ## assuming your django settings file is at '/home/virtualenvdemo/mysite/settings.py'
 
     path = '/home/virtualenvdemo/mysite'
     if path not in sys.path:
