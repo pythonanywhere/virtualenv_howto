@@ -1,12 +1,26 @@
-Start a Web app using the Manual Config wizard
-(check it works)
+Guide to setting up a virtualenv for PythonAnywhere Web apps
+============================================================
+
+*Yo, we heard you like virtualenvs*...
+
+This site is being served on PythonAnywhere from a virtualenv running Django 1.4
+
+Here's proof: [https://github.com/pythonanywhere/virtualenv_howto](https://github.com/pythonanywhere/virtualenv_howto)
+
+Instructions
+------------
+
+Start a Web app using the Manual Config wizard.
+
+*(check it works by visiting the site)*
 
 Start a Bash console
 
     source virtualenvwrapper.sh
     mkvirtualenv django14
 
-You can check it works -- the prompt should gain the (django14), and you can check `which pip` returns the virtualenv pip
+You can check it works -- the prompt should gain the `(django14)` prefix, and
+you can check `which pip` returns the virtualenv pip:
 
     (django14)14:51 ~ $ which pip
     /home/virtualenvdemo/.virtualenvs/django14/bin/pip
@@ -37,7 +51,7 @@ Check it worked:
         ├── urls.py
         └── wsgi.py
 
-(note mysite/mysite folder -- it's definitely 1.4)
+*(note mysite/mysite folder -- it's definitely 1.4)*
 
 Now edit your wsgi file -- you'll need code like this
 

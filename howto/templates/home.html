@@ -1,8 +1,15 @@
 {% load markup %}
 <html>
-<body>
+    <head>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    </head>
 
-{{ howto|markdown }}
+    <body>
+        <div class="row">
+            <div class="span7 offset1">
+                {{ howto|markdown }}
+            </div>
+        </div>
+    </body>
 
-</body>
 </html>
