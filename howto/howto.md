@@ -25,6 +25,11 @@ you can check `which pip` returns the virtualenv pip:
     (django14)14:51 ~ $ which pip
     /home/virtualenvdemo/.virtualenvs/django14/bin/pip
 
+You'll see one small difference to the above -- it will be `/home/`*whatever your username is*
+instead of `/home/virtualenvdemo` at the start.  This is important -- wherever
+you see `/home/virtualenvdemo` in the instructions below, put
+`/home/` and then your username instead.
+
 Now install Django (1.4):
 
     pip install django
@@ -70,7 +75,10 @@ Now **edit your wsgi file** (from the link on the **Web tab**) -- you'll need co
     application = django.core.handlers.wsgi.WSGIHandler()
 
 
-Now Reload the web app
+Don't forget to replace `virtualenvdemo` with your own username in the
+`activate_this` and the `path` lines.
+
+Now **Reload the web app**
 
 Go to site -- you should see Django "it worked!"
 
