@@ -14,7 +14,7 @@ Start a Web app using the Manual Config wizard.
 
 *(check it works by visiting the site)*
 
-Start a Bash console
+Start a **Bash console**
 
     source virtualenvwrapper.sh
     mkvirtualenv django14
@@ -53,7 +53,7 @@ Check it worked:
 
 *(note mysite/mysite folder -- it's definitely 1.4)*
 
-Now edit your wsgi file -- you'll need code like this
+Now **edit your wsgi file** (from the link on the **Web tab**) -- you'll need code like this
 
     activate_this = '/home/virtualenvdemo/.virtualenvs/django14/bin/activate_this.py'
     execfile(activate_this, dict(__file__=activate_this))
@@ -73,4 +73,29 @@ Now edit your wsgi file -- you'll need code like this
 Now Reload the web app
 
 Go to site -- you should see Django "it worked!"
+
+
+Developing with your virtualenv
+-------------------------------
+
+Remember: whenever you want to get back and work on your virtualenv, you
+need to make sure it's active -- if you're opening a new console, for example.
+
+Look out for the little `(django14)` prefix at the command-line.
+
+It's also well worth checking `which pip` to make sure you're using the
+virtualenv pip when installing.
+
+If in doubt, run:
+
+    source virtualenvwrapper.sh
+
+To switch on virtualenvwrapper (you can add this to your `.bashrc`)
+
+And
+
+    workon django14
+
+to switch to working on your virtual environment.
+
 
